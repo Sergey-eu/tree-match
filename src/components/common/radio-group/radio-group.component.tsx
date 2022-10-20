@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { ChangeEvent, FC } from 'react';
 import { RadioGroup as MuiRadioGroup, FormControl, FormControlLabel, Radio } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from 'styles/mui-theme';
@@ -11,7 +11,7 @@ export namespace RadioGroup {
     label: string;
     options: string[];
     value: string;
-    onChange: (value: any) => void;
+    onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   }>
 
   export const $: FC<Props> = (props) => {

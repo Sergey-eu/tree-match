@@ -19,12 +19,11 @@ class QuestionnaireStore {
     });
   }
 
-
   @action
   beginQuestionnaire = () => {
     fetch(`${process.env.REACT_APP_API_URL}/begin`)
     .then(async (response) => await response.json())
-    .then((json: any) => {
+    .then((json: Questionnaire) => {
       runInAction(() => {
         this.questionnaire = json;
       });
@@ -39,7 +38,7 @@ class QuestionnaireStore {
       body: JSON.stringify(payload)
     })
     .then(async (response) => await response.json())
-    .then((json: any) => {
+    .then((json: Questionnaire) => {
       runInAction(() => {
         this.questionnaire = json;
       });

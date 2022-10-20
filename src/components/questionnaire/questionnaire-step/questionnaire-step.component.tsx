@@ -1,10 +1,6 @@
+import React, { FC, useState, ChangeEvent } from 'react';
 import { Button } from 'components/common/button';
 import { RadioGroup } from 'components/common/radio-group';
-import React, { FC, useState, ChangeEvent } from 'react';
-// import { QuestionnaireAnswer } from 'types';
-// import { QuestionnaireAnswer } from 'types';
-// import { Typography } from '@mui/material';
-// import cx from 'classnames';
 
 import styles from './questionnaire-step.module.scss';
 
