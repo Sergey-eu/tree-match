@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+.questionnaireStep {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+
+  &__action {
+    align-self: center;
+  }
+}
